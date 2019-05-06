@@ -1,0 +1,5 @@
+<div>I'm a Google results component!</div>
+<div *ngFor="let item of searchResults$ | async">
+  <div>{{ item.title }}</div>
+  <div>{{ item.content }}</div>
+</div>

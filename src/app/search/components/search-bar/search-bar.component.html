@@ -1,0 +1,5 @@
+<app-search-input (search)="onSearch($event)"></app-search-input>
+<app-search-types
+  [selected$]="selectedProvider$"
+  (typeSelect)="onTypeSelect($event)"
+></app-search-types>

@@ -1,0 +1,27 @@
+<form [formGroup]="form">
+  <div class="d-flex flex-row justify-content-center">
+    <div class="radio mr-4">
+      <label
+        ><input
+          type="radio"
+          name="searchType"
+          checked
+          formControlName="searchType"
+          value="Bing"
+          (ngModelChange)="onCheck($event)"
+        />Bing</label
+      >
+    </div>
+    <div class="radio">
+      <label
+        ><input
+          type="radio"
+          name="searchType"
+          formControlName="searchType"
+          value="Google"
+          (ngModelChange)="onCheck($event)"
+        />Google</label
+      >
+    </div>
+  </div>
+</form>
